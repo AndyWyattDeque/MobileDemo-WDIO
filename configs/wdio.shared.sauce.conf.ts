@@ -21,11 +21,15 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
 // =============================================
 // Max instances of the same device in the cloud
 // =============================================
-    maxInstances: 20
-
+    maxInstances: 20,
 });
 
 // ========
 // Services
 // ========
+// Register accessibility testing services
+//config.services = [
+  //  '@axe-devtools/axe-appium-xcuitest-driver@1.0.0-beta.ba353cd',
+  //'@axe-devtools/axe-appium-uiautomator2-driver@1.0.0-beta.202243f',
+//]
 config.services = (config.services || []).concat('sauce');

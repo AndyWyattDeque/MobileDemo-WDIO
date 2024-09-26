@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Simple js project to install and test an app on devices and execute appium automation together with Deque accessibility scanning",
   "main": "test/specs/index.js",
+  "dependencies": {
+    "@axe-devtools/axe-appium-uiautomator2-driver": "^1.0.0-beta.202243f",
+    "@axe-devtools/axe-appium-xcuitest-driver": "^1.0.0-beta.ba353cd"
+  },
   "directories": {
     "test": "test"
   },
@@ -10,11 +14,13 @@
     "test.android-driver.local.emu": "npx wdio configs/wdio.android-driver.local.emu.conf.ts",
     "test.android.local.emu": "npx wdio configs/wdio.android.local.emu.conf.ts",
     "test.android.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.android.sauce.real.conf.ts",
+    "test.android-driver.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.android-driver.sauce.real.conf.ts",
     "test.android.sauce.real.device.us": "npx wdio configs/wdio.android.sauce.real.conf.ts",
     "test.ios.local.sim": "npx wdio configs/wdio.ios.local.sim.conf.ts",
     "test.ios-driver.local.sim": "npx wdio configs/wdio.ios-driver.local.sim.conf.ts",
     "test.ios.local.real.device": "npx wdio configs/wdio.ios.local.real.conf.ts",
     "test.ios.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.ios.sauce.real.conf.ts",
+    "test.ios-driver.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.ios-driver.sauce.real.conf.ts",
     "test.ios.sauce.real.device.us": "npx wdio configs/wdio.ios.sauce.rdc.real.ts",
     "wdio": "wdio run ./wdio.conf.ts"
   },
