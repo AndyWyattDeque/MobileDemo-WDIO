@@ -1,5 +1,5 @@
 import {join} from 'path';
-import {config as baseConfig } from './wdio.base.conf';
+import {config as baseConfig } from './wdio.shared.local.appium.conf';
 import merge from 'deepmerge';
 
 export const config: WebdriverIO.Config = merge(baseConfig, {

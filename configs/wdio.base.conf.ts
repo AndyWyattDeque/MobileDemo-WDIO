@@ -1,4 +1,3 @@
-// wdio.base.conf.ts
 import AxeWebdriverIO from '@axe-core/webdriverio';
 
 export const config: WebdriverIO.Config = {

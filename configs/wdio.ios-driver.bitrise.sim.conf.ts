@@ -1,4 +1,4 @@
-import {config as baseConfig } from './wdio.base.conf';
+import {config as baseConfig } from './wdio.shared.local.appium.conf';
 import merge from 'deepmerge';
 import {join} from 'path';
 
