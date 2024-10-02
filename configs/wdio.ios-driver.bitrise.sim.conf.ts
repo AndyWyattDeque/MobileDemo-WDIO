@@ -14,7 +14,6 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
         'appium:options': {
             'automationName': 'AxeXCUITest',
             'platformVersion': '16.6',
-            'appium:udid': 'C958039D-015F-48DE-9D14-78FB09E037B4',
             'orientation': 'PORTRAIT',
             'app': join(
                 __dirname,
