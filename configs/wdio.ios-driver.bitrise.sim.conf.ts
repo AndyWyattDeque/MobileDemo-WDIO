@@ -12,7 +12,7 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
         platformName: 'iOS',
         'appium:options': {
             'automationName': 'AxeXCUITest',
-            'platformVersion': '17',
+            'platformVersion': '18',
             'orientation': 'PORTRAIT',
             'app': join(
                 __dirname,
