@@ -1,5 +1,4 @@
-// wdio.ios.local.emu.conf.ts
-import {config as baseConfig } from './wdio.shared.local.appium.conf';
+import {config as baseConfig } from './wdio.base.conf';
 import merge from 'deepmerge';
 import {join} from 'path';
 
@@ -13,7 +12,7 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
         platformName: 'iOS',
         'appium:options': {
             'automationName': 'AxeXCUITest',
-            'platformVersion': '16.6',
+            'platformVersion': '17',
             'orientation': 'PORTRAIT',
             'app': join(
                 __dirname,
