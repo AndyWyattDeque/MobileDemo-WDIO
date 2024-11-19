@@ -13,9 +13,9 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
         platformName: 'iOS',
         'appium:options': {
             'automationName': 'XCUITest',
-            'deviceName': 'iPhone 15 Pro',
-            'platformVersion': '17.5',
-            'appium:udid': 'C958039D-015F-48DE-9D14-78FB09E037B4',
+            'deviceName': 'iPhone 16 Pro',
+            'platformVersion': '18.0',
+            'appium:udid': 'AB506E1C-DA6B-49EE-B636-EB8F2E1B5BC6',
             'orientation': 'PORTRAIT',
             'app': join(
                 __dirname,

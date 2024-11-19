@@ -3,6 +3,7 @@
 
 # ignore ALL files in ANY directory named temp
 temp/
+Results/
 
 # ignore node_modules
 node_modules/

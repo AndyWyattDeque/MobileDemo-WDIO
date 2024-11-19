@@ -23,8 +23,8 @@ export const config: WebdriverIO.Config = {
       client: browser
     });
     //Adds the get axe results command to the browser so it can be used in our specs
-    browser.addCommand('getAxeResults', function () {
-      return axeWdio.analyze();
-    });
+    //browser.addCommand('getAxeResults', function () {
+    // return axeWdio.analyze();
+    //});
 },
 }

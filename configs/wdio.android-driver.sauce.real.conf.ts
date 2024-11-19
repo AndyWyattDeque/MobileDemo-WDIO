@@ -15,15 +15,21 @@ config.maxInstances = 1;
 // http://appium.io/docs/en/writing-running-appium/caps/#general-capabilities
 config.capabilities = [
     {
-        browserName: 'chrome',
-        platformName: 'android',
-        'appium:platformVersion': '13',
+        //browserName: 'chrome',
+        platformName: 'Android',
+        'appium:autoGrantPermissions': true,
+        'appium:autoAcceptAlerts': true,
+        'appium:platformVersion': '14',
         'appium:orientation': 'PORTRAIT',
-        'appium:automationName': 'uiAutomator2',
+        'appium:automationName': 'axeuiautomator2',
         'appium:app': 'storage:filename=app-sample-debug.apk',
         'appium:appWaitActivity': '.MainActivity',
         'appium:noReset': true,
-        'appium:newCommandTimeout': 240,
+        'appium:newCommandTimeout': 60,
+        'sauce:options': {
+            name: "Android Driver - Testing appium2-deque-accessibility",
+            appiumVersion: 'appium2-deque-accessibility',
+        },
     },
 ];
 

@@ -19,12 +19,13 @@ config.capabilities = [
         platformName: 'ios',
         'appium:platformVersion': '17',
         'appium:orientation': 'PORTRAIT',
-        'appium:automationName': 'XCUITest',
+        'appium:automationName': 'axeXCUITest',
         'appium:app': 'storage:filename=app-sample-debug.ipa',
         'appium:noReset': true,
-        'appium:newCommandTimeout': 240,
+        'appium:newCommandTimeout': 60,
         'sauce:options': {
-            appiumVersion: 'appium2-deque-accessibility'
+            name: "iOS Driver - Testing appium2-deque-accessibility",
+            appiumVersion: 'appium2-deque-accessibility',
         }
     },
 ];
