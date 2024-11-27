@@ -4,26 +4,16 @@
   "description": "Simple js project to install and test an app on devices and execute appium automation together with Deque accessibility scanning",
   "main": "test/specs/index.js",
   "dependencies": {
-    "@axe-devtools/axe-appium-uiautomator2-driver": "^1.0.0-beta.202243f"
+    "@axe-devtools/axe-appium-uiautomator2-driver": "^1.1.0"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test.android-driver.bitrise.emu": "npx wdio configs/wdio.android-driver.bitrise.emu.conf.ts",
-    "test.android-driver.local.emu": "npx wdio configs/wdio.android-driver.local.emu.conf.ts",
-    "test.android.local.emu": "npx wdio configs/wdio.android.local.emu.conf.ts",
-    "test.android.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.android.sauce.real.conf.ts",
-    "test.android-driver.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.android-driver.sauce.real.conf.ts",
-    "test.android.sauce.real.device.us": "npx wdio configs/wdio.android.sauce.real.conf.ts",
-    "test.ios.local.sim": "npx wdio configs/wdio.ios.local.sim.conf.ts",
-    "test.ios-driver.bitrise.sim": "npx wdio configs/wdio.ios-driver.bitrise.sim.conf.ts",
-    "test.ios-driver.local.sim": "npx wdio configs/wdio.ios-driver.local.sim.conf.ts",
-    "test.ios.local.real.device": "npx wdio configs/wdio.ios.local.real.conf.ts",
-    "test.ios.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.ios.sauce.real.conf.ts",
-    "test.ios-driver.sauce.real.device.eu": "REGION=eu npx wdio configs/wdio.ios-driver.sauce.real.conf.ts",
-    "test.ios.sauce.real.device.us": "npx wdio configs/wdio.ios.sauce.rdc.real.ts",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "test.android.local": "npx wdio configs/wdio.android-driver.local.emu.conf.ts",
+    "test.android.sauce": "npx wdio configs/wdio.android-driver.sauce.real.conf.ts",
+    "test.ios.local": "npx wdio configs/wdio.ios-driver.local.sim.conf.ts",
+    "test.ios.sauce": "npx wdio configs/wdio.ios-driver.sauce.real.conf.ts"
   },
   "author": "Mobile Team",
   "license": "MIT",

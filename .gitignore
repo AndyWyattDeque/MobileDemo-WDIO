@@ -7,3 +7,6 @@ Results/
 
 # ignore node_modules
 node_modules/
+
+# ignore .npmrc file
+.npmrc
