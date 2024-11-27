@@ -15,7 +15,7 @@ config.maxInstances = 1;
 // http://appium.io/docs/en/writing-running-appium/caps/#general-capabilities
 config.capabilities = [
     {
-        browserName: 'safari',
+        //browserName: 'safari',
         platformName: 'ios',
         'appium:platformVersion': '17',
         'appium:orientation': 'PORTRAIT',
