@@ -1,28 +1,27 @@
 {
   "compilerOptions": {
-    "types": [
-      "node", 
-      "@wdio/mocha-framework",
-      "./src/webdriverio"
-    ],
-    "allowSyntheticDefaultImports": true,
-    "module": "commonjs",
     "target": "ES2023",
-    "esModuleInterop": true,
-    "outDir": "./dist",
-    "rootDir": "./",
+    "module": "commonjs",
     "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./",
     "baseUrl": ".",
     "paths": {
       "*": ["src/*"]
-    }
+    },
+    "typeRoots": ["./node_modules/@types", "./custom-types", "./src"],
+    "types": ["node", "@types/mocha"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "test/**/*.ts"
-  ],
+    "test/**/*.ts",
+    "custom-types.d.ts"
+  ]
 }

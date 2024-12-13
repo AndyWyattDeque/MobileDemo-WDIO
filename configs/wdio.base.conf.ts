@@ -4,7 +4,7 @@ export const config: WebdriverIO.Config = {
   capabilities: [],
   logLevel: 'debug',
   bail: 0,
-  baseUrl: 'https://workshop2.dequelabs.com/',
+  //baseUrl: 'https://workshop2.dequelabs.com/',
   waitforTimeout: 15000,
   connectionRetryTimeout: 180000,
   connectionRetryCount: 3,
@@ -14,17 +14,21 @@ export const config: WebdriverIO.Config = {
   reporters: ['spec'],
   mochaOpts: {
     ui: 'bdd',
-    timeout: 180000,
+    timeout: 60000,
   },
-  before: function (capabilities, specs, browser) {
+  before: function (capabilities, specs) {
+    return require('ts-node').register({ files: true });
+  }
+ // before: function (capabilities, specs) {
+   // require('ts-node').register({ files: true });
+    //  before: function (capabilities, specs, browser) {
     //require('ts-node').register({ files: true});
     // Creates a new AxeWebdriverIO instance and accepts browser object as argument
-    const axeWdio = new AxeWebdriverIO({
-      client: browser
-    });
+   // const axeWdio = new AxeWebdriverIO({
+   //   client: browser
+   //});
     //Adds the get axe results command to the browser so it can be used in our specs
     //browser.addCommand('getAxeResults', function () {
     // return axeWdio.analyze();
     //});
-},
 }

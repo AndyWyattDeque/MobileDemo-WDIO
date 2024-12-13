@@ -12,6 +12,7 @@
   "scripts": {
     "test.android.local": "npx wdio configs/wdio.android-driver.local.emu.conf.ts",
     "test.android.sauce": "npx wdio configs/wdio.android-driver.sauce.real.conf.ts",
+    "test.android.lambda": "npx wdio configs/wdio.android-driver.lambda.real.conf.ts",
     "test.ios.local": "npx wdio configs/wdio.ios-driver.local.sim.conf.ts",
     "test.ios.sauce": "npx wdio configs/wdio.ios-driver.sauce.real.conf.ts"
   },
@@ -20,7 +21,8 @@
   "devDependencies": {
     "@axe-core/webdriverio": "^4.10.0",
     "@axe-devtools/axe-appium-xcuitest-driver": "^1.0.0",
-    "@types/mocha": "^10.0.7",
+    "@types/mocha": "^10.0.10",
+    "@types/webdriverio": "^4.13.3",
     "@wdio/appium-service": "^9.0.7",
     "@wdio/cli": "^9.0.7",
     "@wdio/globals": "^9.0.7",
@@ -37,6 +39,7 @@
     "deepmerge": "^4.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3",
+    "wdio-lambdatest-service": "^3.0.3",
     "webdriverio": "^8.40.5"
   },
   "keywords": []

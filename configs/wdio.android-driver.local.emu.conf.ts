@@ -23,7 +23,7 @@ export const config: WebdriverIO.Config = merge(baseConfig, {
             'appWaitActivity': '.MainActivity',
             'appPackage': 'com.deque.mobile.axedevtoolssampleapp',
             'noReset': true,
-            'newCommandTimeout': 240,
+            'newCommandTimeout': 60000,
         }
     }]
 })
